@@ -1,8 +1,9 @@
 import React from "react";
 import type { NextPage } from "next";
+import BasicPreviewSection from "components/BasicPreviewSection";
 
 const Home: NextPage = () => {
-  return <h1>Hello World</h1>;
+  return <BasicPreviewSection />;
 };
 
 export default Home;
