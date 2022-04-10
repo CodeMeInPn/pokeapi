@@ -1,3 +1,49 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "plugin:import/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "react-hooks"],
+  "rules": {
+    "eqeqeq": ["error", "always"],
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling"]
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "semi": [2, "always"],
+    "@typescript-eslint/no-empty-function": "off",
+    "quotes": [
+      2,
+      "double",
+      { "avoidEscape": true, "allowTemplateLiterals": true }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    },
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
 }
