@@ -7,13 +7,6 @@ const BasicPreviewSection = () => {
     <StyledSection>
       <StyledCardsWrapper>
         <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
-        <PokemonCard />
       </StyledCardsWrapper>
     </StyledSection>
   );

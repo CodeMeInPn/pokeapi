@@ -5,6 +5,8 @@ import {
   StyledArticle,
   StyledCardHeader,
   StyledImageWrapper,
+  StyledNameWrapper,
+  StyledNumber,
   StyledParagraph,
 } from "./styles";
 
@@ -12,11 +14,14 @@ const PokemonCard = () => {
   return (
     <StyledArticle>
       <StyledCardHeader>
-        <StyledParagraph>#001</StyledParagraph>
+        <StyledNumber>#001</StyledNumber>
       </StyledCardHeader>
       <StyledImageWrapper>
         <Image src={pokemonPlaceholder} alt="pokemon" />
       </StyledImageWrapper>
+      <StyledNameWrapper>
+        <StyledParagraph>Placeholder</StyledParagraph>
+      </StyledNameWrapper>
     </StyledArticle>
   );
 };
