@@ -1,8 +1,9 @@
 import React from "react";
 import type { NextPage } from "next";
+import SearchBar from "components/SearchBar";
 
 const Home: NextPage = () => {
-  return <h1>Hello World</h1>;
+  return <SearchBar />;
 };
 
 export default Home;

@@ -9,6 +9,10 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
     }
     body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-family: ${({ theme }) => theme.fonts.primaryFontFamily};
+        background-color: ${({ theme }) => theme.colors.gray_200};
     }
 `;
