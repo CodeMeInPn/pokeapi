@@ -1,10 +1,24 @@
 import React from "react";
-import { StyledInput, StyledSection } from "./styles";
+import { Formik } from "formik";
+import SearchIcon from "components/Icons/SearchIcon";
+import { StyledForm, StyledInput, StyledLabel, StyledSection } from "./styles";
 
 const SearchBar = () => {
   return (
     <StyledSection>
-      <StyledInput />
+      <Formik
+        initialValues={{
+          pokemon: "",
+        }}
+        onSubmit={(values) => console.log(values)}
+      >
+        <StyledForm>
+          <StyledLabel htmlFor="pokemon">
+            <SearchIcon />
+          </StyledLabel>
+          <StyledInput id="pokemon" name="pokemon" placeholder={"search"} />
+        </StyledForm>
+      </Formik>
     </StyledSection>
   );
 };
